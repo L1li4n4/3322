@@ -3,84 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HARRY POTTER</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title></title>
 </head>
 <body>
-        <style>
-            body{
-        background-color:rgb(228, 228, 193);
+    <div class="main-container">
+        <h1>Incluye todos los nombres</h1>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            margin:0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
         }
-        .pokeimg1{
-            position: absolute;
-            color: black;
-
+        .container{
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rebeccapurple;
         }
-        .pokeImg{
-            width: 75px;
-            height: 75px;
-            position: absolute;
-            top: 395px;
-            left: 255px;
+        h1{
+            text-align: center;
+            color: #000;
+            margin-bottom: 20px;
+            text-shadow: 5px 5px 20px red;
         }
-        .pokeimg2{
-            position: absolute;
-            color: black;
-
+        label{
+            font-weight: bold;
+            color: blue;
+            margin-bottom: 5px;
+            display: block;
         }
-        .pokeImg2{
-            width: 300px;
-            height: 300px;
-            position: absolute;
-            top: 200px;
-            left: 100px;
+        input{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            color: rgb(226, 43, 52);
+           
         }
-        
     </style>
-    <img src="hp.jpg" alt="hp" id="pokeImg"  class="pokeImg" style="left: 500px; top: 200px; font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute;" >
-    <img src="hg.jpg" alt="pokebola" id="pokeImg2"  class="pokeImg2" >
-    <img src="rw.jpg" alt="hp" id="pokeImg"  class="pokeImg" style="left: 900px; top: 200px; font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute;" >
-    <img src="dm.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 100px; top: 700px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; "  >
-    <img src="lm.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 500px; top: 700px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; "  >
-    <img src="bl.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 900px; top: 700px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; "  >
-    <img src="cd.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 100px; top: 1200px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; "  >
-    <img src="el.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 500px; top: 1200px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; "  >
-    <img src="ps.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 900px; top: 1200px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; "  >
-    <img src="ll.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 100px; top: 1700px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; ">
-    <img src="ff.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 500px; top: 1700px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; ">
-    <img src="cc.jpg" alt="pokebola" id="pokeImg4"  class="pokeImg4"style="left: 900px; top: 1700px;  font-size: 12.5px; width: 300px;
-    height: 300px; position: absolute; ">
-     <header>
-        <input type="text" id="search" class="search" placeholder="Buscar Personaje">
 
-    </header>
+    <div class="container">
+       <h1>Introducir los nombres de los trabajadores </h1>
+       <form action="guardar-datos.php" method="post">
+             <label for="nombre">Nombres: </label>
+             <input type="text" id="nombre " name="nombre" required>
+             <label for="nombre">Apellidos: </label>
+             <input type="text" id="apellidos" name="apellidos" required>
+             <label for="nombre">Nacionalidades: </label>
+             <input type="text" id="nacionalidad " name="nacionalidad" required>
+             <label for="nombre">Genero: </label>
+             <input type="text" id="genero " name="genero" required>
+             <label for="nombre">Edad: </label>
+             <input type="text" id="edad " name="edad" required>
+             <label for="nombre">Correo: </label>
+             <input type="text" id="correo" name="correo" required>
+             <label for="nombre">Telefono: </label>
+             <input type="text" id="telefono" name="telefono" required>
 
+             <div class="button">
+                <button type="submit">Guardar</button>
+               
+        </div>
+           
+    </form>
 
-
-
-    <h3 class="pokeimg1" style="left: 500px; top: 5px; font-size: 50px;color: rgba(105, 159, 219, 0.555);">HARRY POTER<br>PERSONAJES</h3>
-    <div id="pokename" class="pokeimg1" style="left:130px; top: 550px; font-size:30px; color: rgb(212, 17, 17);">HARRY POTTER<br>Casa:Gryffindor</div>
-    <div id="pokeHe" class="pokeimg1" style="left:510px; top: 550px; font-size:30px; color: rgb(212, 17, 17);">HERMIONE GRANGER<br>Casa:Gryffindor</div>
-    <div id="pokeWe" class="pokeimg1" style="left:950px; top: 550px; font-size:30px; color: rgb(212, 17, 17);">RON WEASLEY<br>Casa:Gryffindor</div>
-    <div id="poketype" class="pokeimg1" style="left:130px; top: 1050px; font-size:30px; color: rgb(15, 136, 4);">DRACO MALFOY<br>Casa:Slytherin</div>
-    <div id="pokenitem" class="pokeimg1" style="left:900px; top: 1050px; font-size:30px;color: rgb(15, 136, 4); ">BELLATRIX LESTRANGE<br>Casa:Slytherin</div>
-    <div id="pokemove1" class="pokeimg1" style="left:510px; top: 1050px; font-size:30px; color: rgb(15, 136, 4);">LUCIOS MALFOY<br>Casa:Slytherin</div>
-    <div id="pokemove2" class="pokeimg1" style="left:130px; top: 1550px; font-size:30px; color: rgb(239, 252, 59);">CEDRIC DIGGORY<br>Casa:Hafflepuff</div>
-    <div id="pokemove3" class="pokeimg1" style="left:510px; top: 1550px; font-size:30px; color: rgb(239, 252, 59);">EDWARD LUPIN<br>Casa:Hafflepuff</div>
-    <div id="pokemove4" class="pokeimg1" style="left:950px; top: 1550px; font-size:30px; color: rgb(239, 252, 59);">POMONA SPROUT<br>Casa:Hafflepuff</div>
-    <div id="pokeid" class="pokeimg1" style="left: 130px; top: 2050px; font-size:30px;color: rgb(26, 40, 241); ">LUNA LOVEGOOD<br>Casa:Ravenclaw</div>
-    <div id="pokeinfo" class="pokeimg1" style="left: 510px; top: 2050px; font-size:30px; color: rgb(26, 40, 241);">FILIUS FLITWICK<br>Casa:Ravenclaw</div>
-    <div id="pokeinfo" class="pokeimg1" style="left: 950px; top: 2050px; font-size:30px;color: rgb(26, 40, 241); ">CHO CHANG<br>Casa:Ravenclaw</div>
-
+    </div>
 </body>
 </html>
